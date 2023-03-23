@@ -20,16 +20,6 @@ export const genreList: Genre[] = [
     image: '/genre-images/4.jpeg',
   } as const,
   {
-    id: 'byuhhye',
-    label: 'ビュッフェ',
-    image: '/genre-images/5.jpeg',
-  } as const,
-  {
-    id: 'italian',
-    label: 'イタリアン',
-    image: '/genre-images/6.jpeg',
-  } as const,
-  {
     id: 'french',
     label: 'フレンチ',
     image: '/genre-images/7.jpeg',
@@ -90,16 +80,6 @@ export const genreList: Genre[] = [
     image: '/genre-images/18.jpeg',
   } as const,
   {
-    id: 'shurasuko',
-    label: 'シュラスコ',
-    image: '/genre-images/19.jpeg',
-  } as const,
-  {
-    id: 'jingisukan',
-    label: 'ジンギスカン',
-    image: '/genre-images/20.jpeg',
-  } as const,
-  {
     id: 'gyokai',
     label: '魚介',
     image: '/genre-images/21.jpeg',
@@ -113,10 +93,5 @@ export const genreList: Genre[] = [
     id: 'bear',
     label: 'ビアバー',
     image: '/genre-images/23.jpeg',
-  } as const,
-  {
-    id: 'bbq',
-    label: 'バーベキュー',
-    image: '/genre-images/24.jpeg',
   } as const,
 ]
