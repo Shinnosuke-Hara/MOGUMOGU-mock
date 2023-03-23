@@ -6,7 +6,7 @@ import Box from '@mui/material/Box'
 export default function SelectGenre() {
   return (
     <Box sx={{ width: '100vw', height: '100vh' }}>
-      <Typography textAlign={'center'} variant="h6">
+      <Typography textAlign={'center'} variant="h6" sx={{ marginTop: 16 }}>
         今日はどんな気分ですか？
       </Typography>
       <BubbleGrid dataset={genreList} />
