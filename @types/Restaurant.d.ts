@@ -1,9 +1,6 @@
-import { StaticImageData } from 'next/image'
-
-export interface Restauant {
-  id: string
+export interface Restaurant {
+  id: number
   name: string
   location: number
-  src: StaticImageData
   description: string
 }
