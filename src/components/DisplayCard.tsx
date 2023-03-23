@@ -1,7 +1,5 @@
 import Box from '@mui/material/Box'
-import Card from '@mui/material/Card'
-import CardActionArea from '@mui/material/CardActionArea'
-import CardMedia from '@mui/material/CardMedia'
+// import Link from 'next/link'
 import React from 'react'
 import { Restaurant } from '../../@types/Restaurant'
 
@@ -12,6 +10,7 @@ interface Props {
 export default function DisplayCard({ restauant }: Props) {
   return (
     <Box sx={{ width: '100%', aspectRatio: 1, borderRadius: 1 }}>
+      {/* <Link href={`/${restauant.id}`}> */}
       <img
         src={`/restauants/${restauant.id}.png`}
         alt=""
@@ -21,6 +20,7 @@ export default function DisplayCard({ restauant }: Props) {
           width: '100%',
         }}
       />
+      {/* </Link> */}
     </Box>
   )
 }
