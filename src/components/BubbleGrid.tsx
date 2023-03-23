@@ -1,7 +1,8 @@
 import { FC, useEffect, useRef } from 'react'
 import { Network, Options } from 'vis-network'
+import Box from '@mui/material/Box'
 
-const nodeSize = 70
+const nodeSize = 75
 
 const bubbleGridOptions: Options = {
   nodes: {
@@ -19,7 +20,10 @@ const bubbleGridOptions: Options = {
     minVelocity: 0.01,
     solver: 'repulsion',
     repulsion: {
-      nodeDistance: nodeSize * 0.6,
+      nodeDistance: nodeSize * 0.55,
+      springLength: 1000,
+      damping: 0.2,
+      centralGravity: 0.1,
     },
   },
   interaction: {
@@ -71,11 +75,22 @@ export const BubbleGrid: FC<BubbleGridProps> = ({ dataset }) => {
         ctx.stroke()
         ctx.clip()
         ctx.drawImage(imageList[i], x, y, nodeSize, nodeSize)
-        ctx.fillStyle = 'rgba(249, 44, 85, 0.35)'
+        ctx.fillStyle = 'rgba(249, 44, 85, 0.45)'
         ctx.fillRect(x, y, nodeSize, nodeSize)
         ctx.restore()
       })
     })
   }, [visJsRef, dataset])
-  return <div ref={visJsRef} style={{ height: 650 }} />
+  return (
+    <Box
+      ref={visJsRef}
+      sx={{
+        width: '100%',
+        height: ' 100%',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+      }}
+    />
+  )
 }
