@@ -1,5 +1,6 @@
 import { FC, useEffect, useRef } from 'react'
 import { Network, Options } from 'vis-network'
+import Box from '@mui/material/Box'
 
 const nodeSize = 75
 
@@ -80,5 +81,16 @@ export const BubbleGrid: FC<BubbleGridProps> = ({ dataset }) => {
       })
     })
   }, [visJsRef, dataset])
-  return <div ref={visJsRef} style={{ height: 650 }} />
+  return (
+    <Box
+      ref={visJsRef}
+      sx={{
+        width: '100%',
+        height: ' 100%',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+      }}
+    />
+  )
 }
