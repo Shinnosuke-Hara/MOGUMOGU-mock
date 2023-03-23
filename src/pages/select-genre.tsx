@@ -2,6 +2,7 @@ import { BubbleGrid } from '@/components/BubbleGrid'
 import { genreList } from '@/constants/genre-list'
 import { Typography } from '@mui/material'
 import Box from '@mui/material/Box'
+import Link from 'next/link'
 
 export default function SelectGenre() {
   return (
@@ -9,7 +10,9 @@ export default function SelectGenre() {
       <Typography textAlign={'center'} variant="h6" sx={{ marginTop: 16 }}>
         今日はどんな気分ですか？
       </Typography>
-      <BubbleGrid dataset={genreList} />
+      <Link href="/">
+        <BubbleGrid dataset={genreList} />
+      </Link>
     </Box>
   )
 }
