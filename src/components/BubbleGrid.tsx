@@ -1,7 +1,7 @@
 import { FC, useEffect, useRef } from 'react'
 import { Network, Options } from 'vis-network'
 
-const nodeSize = 70
+const nodeSize = 75
 
 const bubbleGridOptions: Options = {
   nodes: {
@@ -19,7 +19,10 @@ const bubbleGridOptions: Options = {
     minVelocity: 0.01,
     solver: 'repulsion',
     repulsion: {
-      nodeDistance: nodeSize * 0.6,
+      nodeDistance: nodeSize * 0.55,
+      springLength: 1000,
+      damping: 0.2,
+      centralGravity: 0.1,
     },
   },
   interaction: {
@@ -71,7 +74,7 @@ export const BubbleGrid: FC<BubbleGridProps> = ({ dataset }) => {
         ctx.stroke()
         ctx.clip()
         ctx.drawImage(imageList[i], x, y, nodeSize, nodeSize)
-        ctx.fillStyle = 'rgba(249, 44, 85, 0.35)'
+        ctx.fillStyle = 'rgba(249, 44, 85, 0.45)'
         ctx.fillRect(x, y, nodeSize, nodeSize)
         ctx.restore()
       })
