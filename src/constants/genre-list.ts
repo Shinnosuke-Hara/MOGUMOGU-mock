@@ -1,6 +1,18 @@
 export const genreList: Genre[] = [
-  { label: '和食', src: '/genre-images/japanese.jpg' } as const,
-  { label: '中華', src: '/genre-images/chinese.jpg' } as const,
-  { label: '寿司', src: '/genre-images/sushi.jpg' } as const,
-  { label: '焼肉', src: '/genre-images/yakiniku.jpg' } as const,
+  {
+    id: 'japanese',
+    label: '和食',
+    image: '/genre-images/japanese.jpeg',
+  } as const,
+  {
+    id: 'chinese',
+    label: '中華',
+    image: '/genre-images/chinese.jpeg',
+  } as const,
+  { id: 'sushi', label: '寿司', image: '/genre-images/sushi.jpeg' } as const,
+  {
+    id: 'yakiniku',
+    label: '焼肉',
+    image: '/genre-images/yakiniku.jpeg',
+  } as const,
 ]

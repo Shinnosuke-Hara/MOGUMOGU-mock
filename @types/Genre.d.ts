@@ -1,4 +1,5 @@
 interface Genre {
+  id: string,
   label: string
-  src?: string
+  image?: string
 }
