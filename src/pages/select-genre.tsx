@@ -7,7 +7,7 @@ import Link from 'next/link'
 export default function SelectGenre() {
   return (
     <Box sx={{ width: '100vw', height: '100vh' }}>
-      <Typography textAlign={'center'} variant="h6" sx={{ marginTop: 16 }}>
+      <Typography textAlign={'center'} variant="h6" sx={{ marginTop: 10 }}>
         今日はどんな気分ですか？
       </Typography>
       <Link href="/">
