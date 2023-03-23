@@ -2006,6 +2006,11 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
+vis-network@^9.1.5:
+  version "9.1.5"
+  resolved "https://registry.yarnpkg.com/vis-network/-/vis-network-9.1.5.tgz#94c67a4befe0a2e17f74b5630d25c6c4b97dbc8d"
+  integrity sha512-owiKboYjCguXHrrJ0yRfjOP/LpavD6hmGGnW6Sgsk36IbFmPjxV1QHmRcpW/BzRNK2fBhttSxMLWbCGow5s7cQ==
+
 which-boxed-primitive@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/which-boxed-primitive/-/which-boxed-primitive-1.0.2.tgz#13757bc89b209b049fe5d86430e21cf40a89a8e6"
